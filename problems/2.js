@@ -7,7 +7,11 @@
  * @example ["Chase", "Raman"] -> ["Hi Chase", "Hi Raman"]
  */
 function problem(names) {
-    return null;
+    array = []
+    for (const element of names) {
+        array.push(`Hi ${element}`)
+    }
+    return array
 }
 
 const tests = [
