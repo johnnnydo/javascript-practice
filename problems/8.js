@@ -7,7 +7,12 @@
  * @example [1, 2, 3] -> 6
 */
 function problem(numbers) {
-    return null;
+    function sum(total, num) {
+        return total + num
+    }
+    let x = numbers.reduce(sum, 0)
+    let avg = x/ numbers.length 
+    return avg
 }
 
 const tests = [
