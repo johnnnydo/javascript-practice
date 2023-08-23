@@ -10,8 +10,8 @@
 function problem(str) {
     const new_normal = str.split(' ').join('').toLowerCase() 
     const reverse_Str = new_normal.split('').reverse().join('')
-    const reverse_join = reverse_Str.split(' ').join('')    
-    if (reverse_join == new_normal) {
+        
+    if (reverse_Str == new_normal) {
         return true
     } else {
         return false
