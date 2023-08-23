@@ -8,7 +8,14 @@
  * @example "racecar" -> true
 */
 function problem(str) {
-    return null;
+    const new_normal = str.split(' ').join('').toLowerCase() 
+    const reverse_Str = new_normal.split('').reverse().join('')
+    const reverse_join = reverse_Str.split(' ').join('')    
+    if (reverse_join == new_normal) {
+        return true
+    } else {
+        return false
+    }
 }
 
 const tests = [
